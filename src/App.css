@@ -21,6 +21,7 @@
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
+  font-family: 'MyFont';
   color: white;
 }
 
@@ -35,4 +36,9 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+@font-face {
+    font-family: 'MyFont';
+    src: local('MyFont'), url(./Inter-Regular.woff) format('woff');
 }

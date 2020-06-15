@@ -4,6 +4,8 @@ import App from './App';
 import {mount} from 'cypress-react-unit-test'
 
 it('renders learn react link', () => {
-  mount(<App />)
+  mount(<App />, {
+      cssFiles: 'src/App.css',
+  })
   cy.contains(/learn react/i)
 });
